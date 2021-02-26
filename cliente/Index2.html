@@ -3,40 +3,66 @@
   <head>
     <title>Student login form</title>
     <style>
-      html, body {
+      html,
+      body {
         margin: 0px;
         padding: 0px;
-        background-color: red;
-        font-size: 50px;
-        color: white;
       }
-      * { 
-      box-sizing: border-box;
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #CD853F;
+      }
+      #todo {
+        width: 1240px;
       }
       #parte1 {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 119px;
       }
       #parte2 {
+        display: flex;
+        flex-direction: column;
+        background-color: #FFEFD5;
+        padding: 60px 70px 60px 70px;
+        
+  
+      }
+      #parte3 {
+        display: flex;
+        align-items: center;
+      }
+      #boton {
+        width: 350px;
+        height: 62px;
+        margin: 0px auto;
 
       }
-
     </style>
   </head>
   <body>
-    <div id="parte1">
-      <h1>Student login form</h1>
-      <img src="Union.png" />
-    </div>
-    <div id="parte2" >
-      <p>Username</p>
-      <input type="text" placeholder="Enter your username" />
-      <p>Password</p>
-      <input type="text" placeholder="Enter your password" />
-      <input type="checkbox" />
-      <p>Remember me</p>
-      <input type="submit" value="Enviar" />
+    <div id="todo">
+      <div id="parte1">
+        <h1>Student login form</h1>
+        <img src="Union.png" />
+      </div>
+      <div id="parte2">
+        <p>Username</p>
+        <input type="text" placeholder="Enter your username" />
+        <p>Password</p>
+        <input type="text" placeholder="Enter your password" />
+        <div id="parte3">
+          <input type="checkbox" />
+          <p>Remember me</p>
+        </div>
+        <input id="boton" type="submit" value="Enviar" />
+      </div>
     </div>
   </body>
 </html>
